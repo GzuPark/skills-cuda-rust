@@ -1,6 +1,6 @@
 # CUDA Rust agent skills
 
-These Agent Skills help coding agents work with NVIDIA CUDA Rust. The repository contains a model selection skill, SIMT and Tile kernel skills, and a shared host runtime skill. [llms.txt](llms.txt) indexes NVIDIA documentation at a fixed source revision and links to current documentation.
+These Agent Skills help coding agents work with [NVIDIA CUDA Rust](https://github.com/NVIDIA/cuda-rust). They are based on NVIDIA's CUDA Rust documentation and source code. The repository contains a model selection skill, SIMT and Tile kernel skills, and a shared host runtime skill. [llms.txt](llms.txt) indexes NVIDIA documentation at a fixed source revision and links to current documentation.
 
 CUDA Rust is early-stage software. Match the sources and examples to the target project's dependencies. The pinned snapshot is not a claim that every API is present in a published release.
 
@@ -25,4 +25,4 @@ Start a new agent session after installation. Skills link directly to NVIDIA's s
 
 ## License
 
-This repository is licensed under the [Apache License 2.0](LICENSE). The vector addition example is adapted from NVIDIA CUDA Rust material; its [README](examples/simt-vecadd/README.md) records the source and modifications. NVIDIA CUDA Rust and its dependencies retain their own licenses.
+This repository is licensed under the [Apache License 2.0](LICENSE). NVIDIA CUDA Rust and its dependencies retain their own licenses.
