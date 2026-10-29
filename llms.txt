@@ -1,0 +1,30 @@
+# CUDA Rust agent documentation
+
+> CUDA Rust provides SIMT kernels with cuda-oxide, tile kernels with cuTile Rust, and shared host runtime crates. This index points to NVIDIA's documentation at a fixed source revision.
+
+The snapshot is NVIDIA/cuda-rust commit `0d62b682be98a12897867b23ff0dfc0d765e9fa3`, checked on 2026-10-29. CUDA Rust is an early-stage research project and APIs may change. Match documentation and examples to the project's dependency versions. The links below describe the snapshot, not necessarily a released crate. Consult the current documentation when working with another version.
+
+## Start here
+
+- [CUDA Rust overview and model selection](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/README.md): SIMT, Tile, shared runtime and toolchain comparison.
+- [Current CUDA Rust documentation](https://nvidia.github.io/cuda-rust/): current overview and links to the books.
+- [NVIDIA CUDA Rust releases](https://github.com/NVIDIA/cuda-rust/releases): releases and version-specific changes.
+
+## cuda-oxide
+
+- [cuda-oxide README](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/cuda-oxide/README.md): requirements, installation, compiler and examples.
+- [cuda-oxide book](https://nvidia.github.io/cuda-rust/cuda-oxide/): current guides for SIMT kernels, safety, launches and debugging.
+- [SIMT launch guide](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/cuda-oxide/cuda-oxide-book/gpu-programming/launching-kernels.md): launch contracts and kernel invocation at the snapshot.
+
+## cuTile Rust
+
+- [cuTile README](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/cutile-rs/README.md): requirements, installation and examples.
+- [cuTile book](https://nvidia.github.io/cuda-rust/cutile/latest/): current guides and API references.
+- [Tensors and tiles](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/cutile-rs/cutile-book/guide/tensors-and-tiles.md): tensor views, partitions and tiles at the snapshot.
+- [Vector addition tutorial](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/cutile-rs/cutile-book/tutorials/02-vector-addition.md): host and kernel example at the snapshot.
+
+## Shared runtime
+
+- [Host API reference](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/cutile-rs/cutile-book/reference/host-api.md): host tensors, execution and runtime at the snapshot.
+- [Interoperability guide](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/cutile-rs/cutile-book/guide/interoperability.md): external memory and stream integration at the snapshot.
+- [SIMT and Tile inter-kernel example](https://github.com/NVIDIA/cuda-rust/blob/0d62b682be98a12897867b23ff0dfc0d765e9fa3/cuda-oxide/crates/rustc-codegen-cuda/examples/cutile_inter_kernel/README.md): kernels share device buffers on a stream.
